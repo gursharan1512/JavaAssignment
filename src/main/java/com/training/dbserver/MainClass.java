@@ -6,7 +6,7 @@ import java.util.*;
 public class MainClass {
 
 	public static void main(String[] args) throws IOException {
-        String str="select * from ipl.csv where season > 2016 and city= 'Bangalore' order by win_by_runs";
+        String str="select * from ipl.csv where season > 2016 and city = 'Bangalore' order by win_by_runs";
         QueryParameter query=new QueryParameter();
         query.tokenize(str);
         ArrayList<String> s=query.CSV(str);
